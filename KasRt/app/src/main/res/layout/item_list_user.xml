@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LAPORAN KEUANGAN KAS RT"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <View
+        android:id="@+id/underline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <ImageView
+        android:id="@+id/item_avatar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Avatar"
+        app:layout_constraintTop_toBottomOf="@+id/underline"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/labelName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PROFIL WARGA "
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/item_avatar"
+        app:layout_constraintTop_toBottomOf="@+id/item_avatar" />
+
+    <TextView
+        android:id="@+id/ItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/item_avatar"
+        app:layout_constraintStart_toEndOf="@id/item_avatar"
+        app:layout_constraintTop_toTopOf="@id/item_avatar"
+        android:layout_marginStart="8dp"
+        android:text="John Doe" />
+
+    <TextView
+        android:id="@+id/labelEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: "
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/labelName"
+        app:layout_constraintTop_toBottomOf="@+id/labelName"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/ItemEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0000FF"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/labelEmail"
+        app:layout_constraintTop_toTopOf="@+id/labelEmail"
+        tools:text="john.doe@example.com" />
+
+    <TextView
+        android:id="@+id/labelAlamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alamat: "
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/labelEmail"
+        app:layout_constraintTop_toBottomOf="@+id/labelEmail"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/ItemAlamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0000FF"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/labelAlamat"
+        app:layout_constraintTop_toTopOf="@+id/labelAlamat"
+        tools:text="Jl. Contoh No. 123" />
+
+    <TextView
+        android:id="@+id/labelTotalIuranBulanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Iuran Bulanan: "
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/labelAlamat"
+        app:layout_constraintTop_toBottomOf="@+id/labelAlamat"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/itemTotalIuranBulanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0000FF"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/labelTotalIuranBulanan"
+        app:layout_constraintTop_toTopOf="@+id/labelTotalIuranBulanan"
+        tools:text="Rp 1.000.000" />
+
+    <TextView
+        android:id="@+id/labelTotalIuranIndividu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Iuran Individu: "
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/labelTotalIuranBulanan"
+        app:layout_constraintTop_toBottomOf="@+id/labelTotalIuranBulanan"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/itemTotalIuranIndividu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0000FF"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/labelTotalIuranIndividu"
+        app:layout_constraintTop_toTopOf="@+id/labelTotalIuranIndividu"
+        tools:text="Rp 500.000" />
+
+    <TextView
+        android:id="@+id/labelTotalIuranAkhir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Iuran Akhir: "
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/labelTotalIuranIndividu"
+        app:layout_constraintTop_toBottomOf="@+id/labelTotalIuranIndividu"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/itemTotalIuranAkhir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0000FF"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/labelTotalIuranAkhir"
+        app:layout_constraintTop_toTopOf="@+id/labelTotalIuranAkhir"
+        tools:text="Rp 1.500.000" />
+
+    <TextView
+        android:id="@+id/labelPengeluaranIuran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pengeluaran Iuran: "
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/labelTotalIuranAkhir"
+        app:layout_constraintTop_toBottomOf="@+id/labelTotalIuranAkhir"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/itemPengeluaranIuran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0000FF"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/labelPengeluaranIuran"
+        app:layout_constraintTop_toTopOf="@+id/labelPengeluaranIuran"
+        tools:text="Rp 200.000" />
+
+    <TextView
+        android:id="@+id/labelPemanfaatanIuran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pemanfaatan Iuran: "
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/labelPengeluaranIuran"
+        app:layout_constraintTop_toBottomOf="@+id/labelPengeluaranIuran"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/itemPemanfaatanIuran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0000FF"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/labelPemanfaatanIuran"
+        app:layout_constraintTop_toTopOf="@+id/labelPemanfaatanIuran"
+        tools:text="Rp 1.300.000" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="#000"
+        app:layout_constraintTop_toBottomOf="@+id/itemPemanfaatanIuran"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
