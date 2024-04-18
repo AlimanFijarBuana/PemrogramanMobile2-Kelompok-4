@@ -11,7 +11,7 @@
 | HIKMATUL ZULFA      | 312210660 |
 
 ## Deskripsi
-Proyek ini merupakan hasil dari tugas kelompok dalam mata kuliah Pemrograman Mobile 2. Kami membuat aplikasi [keterangan singkat tentang aplikasi].
+Proyek ini merupakan hasil dari tugas kelompok dalam mata kuliah Pemrograman Mobile 2. Kami membuat aplikasi [PARSING JSON DENGAN API SPREADSHEET].
 
 ## Panduan Penggunaan
 [Langkah-langkah untuk menginstal, menjalankan, dan menggunakan aplikasi]
